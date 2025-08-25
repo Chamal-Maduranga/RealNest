@@ -5,7 +5,7 @@ import Icon from './Icon'
 
 function MobileMenu() {
 
-    const [menuOpen, setMenuOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(true)
 
     function toggleMenu() {
         setMenuOpen(!menuOpen)
@@ -25,14 +25,14 @@ function MobileMenu() {
                 className='absolute top-0 right-0 p-5 opacity-50'>
                 <Icon name={'opener'} size={24} color={'cyan-400'} />
             </div>
-            <div className={`fixed top-0 right-0 w-6/12 h-screen bg-gray/10 backdrop-blur-[50px] z-10  duration-300 ${menuOpen ? 'translate-x-full' : 'translate-x-0'} `}>
+            <div className={`fixed top-0 right-0 w-8/12 h-screen bg-gray/10 backdrop-blur-[5px] z-10  duration-300 ${menuOpen ? 'translate-x-full' : 'translate-x-0'} `}>
                 <div
                     onClick={() => (toggleMenu())}
                     className='p-8 '>
 
                     <Icon name={'closer'} size={24} color={'cyan-400'} />
                 </div>
-                <div className='mt-50 text-white text-center'>
+                <div className='mt-15 text-white text-center'>
                     {menuItems.map((item, i) => (
                         <div key={i} className=' py-8 bg-cyan-600'>
                             <Link href={`${item.url}`} className='text-2xl font-heading'>{item.name}</Link>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 function AllProperty() {
     return (
         <div>
-            <h1 className='font-heading text-7xl text-center py-20'>Projects</h1>
+            <h1 className='font-heading text-6xl md:text-7xl text-center py-20'>Projects</h1>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-7 max-w-10/12 mx-auto'>
                 {projects.map((p) => (
@@ -15,7 +15,7 @@ function AllProperty() {
                                 <Image src={p.images[0]} width={350} height={600} alt={p.location} className='rounded-l-xl h-[350px]' />
                             </div>
                             <div className='detailsDiv flex flex-col items-left ml-2.5'>
-                                <p className='font-heading text-center text-4xl p-2'>{p.name}</p>
+                                <p className='font-heading text-center text-2xl md:text-4xl p-2'>{p.name}</p>
                                 <div className='mt-3'>
                                     <p className='italic lowercase text-gray-400'>Price</p>
                                     <p className='font-body text-xl text-cyan-700'>{p.priceRange}</p>

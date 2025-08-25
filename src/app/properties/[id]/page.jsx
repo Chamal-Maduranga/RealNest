@@ -8,7 +8,7 @@ import { Fullscreen } from 'lucide-react'
 import Menu from '@/app/component/Header/Menu'
 
 function page({ params }) {
-  // Get the ID from the URL
+  // Get the ID from the URL6
   const projectId = parseInt(params.id)
 
   // Find the project with matching ID

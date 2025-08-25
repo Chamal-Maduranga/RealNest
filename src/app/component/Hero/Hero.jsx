@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import HeroImage from '../../../../public/images/hero.jpg';
+import Link from 'next/link';
 
 function Hero() {
   return (
@@ -26,9 +27,11 @@ function Hero() {
           <h4 className="text-xl font-body mt-7 text-white bg-black/10 backdrop-blur-[1px] p-2">
             Discover premium villas, apartments, and off-plan projects with us.
           </h4>
-          <button className="font-heading border-1 border-white text-2xl p-5 rounded-sm mt-20 cursor-pointer bg-white/10 backdrop-blur-[1px] text-white">
+          <Link href={'/contact'}>
+          <button className="active:scale-105 font-heading border-1 border-white text-2xl p-5 rounded-sm mt-20 cursor-pointer bg-white/10 backdrop-blur-[1px] text-white">
             Contact Us
           </button>
+          </Link>
         </div>
       </div>
 

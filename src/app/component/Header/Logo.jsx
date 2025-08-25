@@ -19,7 +19,7 @@ function Logo() {
   }
 
   return (
-    <div className='flex items-center'>
+    <div className='flex items-center mt-4'>
       <a onClick={handleClick}>
         <Image
           src='/Real_Nest_Logo_Black.png'

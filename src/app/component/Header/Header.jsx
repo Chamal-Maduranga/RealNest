@@ -8,7 +8,6 @@ import MobileMenu from './MobileMenu'
 function Header() {
   return (
     <div className='
-    my-3.5
     md:my-0
     sticky 
     top-0 
